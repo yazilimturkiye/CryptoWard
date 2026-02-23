@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|c:\\users\\tbtk-laptop\\documents\\github\\cryptoward\\cryptoward\\pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|c:\\users\\tbtk-laptop\\documents\\github\\cryptoward\\cryptoward\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|c:\\users\\tbtk-laptop\\documents\\github\\cryptoward\\cryptoward\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|c:\\users\\tbtk-laptop\\documents\\github\\cryptoward\\cryptoward\\pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PFXControl.cs",
+              "DocumentMoniker": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\PFXControl.cs",
+              "RelativeDocumentMoniker": "PFXControl.cs",
+              "ToolTip": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\PFXControl.cs",
+              "RelativeToolTip": "PFXControl.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAIwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T13:15:50.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PFXControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\PFXControl.cs",
+              "RelativeDocumentMoniker": "PFXControl.cs",
+              "ToolTip": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\PFXControl.cs [Design]",
+              "RelativeToolTip": "PFXControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T13:08:10.891Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T12:55:58.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\TBTK-LAPTOP\\Documents\\GitHub\\CryptoWard\\CryptoWard\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T12:53:19.062Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
