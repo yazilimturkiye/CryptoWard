@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PFXControl));
             this.button_Select_PFX_File = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.textBox_PFX_Path = new System.Windows.Forms.TextBox();
             this.textBox_PFX_Pass = new System.Windows.Forms.TextBox();
             this.button_Select_File = new System.Windows.Forms.Button();
             this.textBox_File_Path = new System.Windows.Forms.TextBox();
             this.button_Sign = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,19 +49,25 @@
             this.button_Select_PFX_File.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button_Select_PFX_File.ImageIndex = 0;
             this.button_Select_PFX_File.ImageList = this.ımageList1;
-            this.button_Select_PFX_File.Location = new System.Drawing.Point(747, 120);
+            this.button_Select_PFX_File.Location = new System.Drawing.Point(697, 121);
             this.button_Select_PFX_File.Name = "button_Select_PFX_File";
-            this.button_Select_PFX_File.Size = new System.Drawing.Size(200, 50);
+            this.button_Select_PFX_File.Size = new System.Drawing.Size(250, 50);
             this.button_Select_PFX_File.TabIndex = 1;
             this.button_Select_PFX_File.Text = "Select PFX File";
             this.button_Select_PFX_File.UseVisualStyleBackColor = true;
             this.button_Select_PFX_File.Click += new System.EventHandler(this.button_Select_PFX_File_Click);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "PFXFile.fw.png");
+            // 
             // textBox_PFX_Path
             // 
-            this.textBox_PFX_Path.Enabled = false;
             this.textBox_PFX_Path.Location = new System.Drawing.Point(102, 19);
             this.textBox_PFX_Path.Name = "textBox_PFX_Path";
+            this.textBox_PFX_Path.ReadOnly = true;
             this.textBox_PFX_Path.Size = new System.Drawing.Size(845, 26);
             this.textBox_PFX_Path.TabIndex = 2;
             // 
@@ -113,15 +119,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PFX Path";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -131,6 +128,15 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "PFX Pass";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "PFX Path";
+            // 
             // groupBox2
             // 
             this.groupBox2.Location = new System.Drawing.Point(3, 179);
@@ -138,12 +144,6 @@
             this.groupBox2.Size = new System.Drawing.Size(953, 191);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "PFXFile.fw.png");
             // 
             // PFXControl
             // 

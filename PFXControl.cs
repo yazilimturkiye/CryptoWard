@@ -26,14 +26,14 @@ namespace CryptoWard
             InitializeComponent();
         }
 
-        private void button_Select_PFX_File_Click(object sender, EventArgs e)
+        private void button_Select_PFX_File_Click(object sender, EventArgs e) //Select PFX File
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "PFX Files (*.pfx)|*.pfx";
+            OpenFileDialog SelectPFX = new OpenFileDialog();
+            SelectPFX.Filter = "PFX Files (*.pfx)|*.pfx";
 
-            if (ofd.ShowDialog() == DialogResult.OK)
+            if (SelectPFX.ShowDialog() == DialogResult.OK)
             {
-                textBox_PFX_Path.Text = ofd.FileName;
+                textBox_PFX_Path.Text = SelectPFX.FileName;
             }
         }
 
