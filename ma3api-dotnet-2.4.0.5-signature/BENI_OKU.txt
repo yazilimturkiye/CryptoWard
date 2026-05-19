@@ -1,0 +1,33 @@
+MA3 API - .NET
+**************
+NOTLAR
+-------
+=> MA3 API Kullanım Kılavuzu "doc" dizini altında bulunmaktadır.
+
+=> "lib" dizini altında kullanmanız gereken dll dosyaları bulunmaktadır. Projeler için gerekli dll listesine lib/BENI_OKU dosyasından bakabilirsiniz.
+
+=> SampleBase.cs sınıflardan proje relative path dizini, Akıllı Kart pini gibi ayarları konfigüre ediniz.
+
+=> "ornekler" klasörünün altında XAdES, CAdES, PAdES, Androidİmza ve Mobilİmza için örnek kullanım test sınıflarını bulabilirsiniz.
+
+=> Örnek certval-policy.xml dosyası kullanıldığında SertifikaDeposu.xml dosyası policy dosyası içerisindeki adresten indirilip kullanıcı dizini altında oluşacak ".sertifikadeposu" isimli dizinine kopyalanır.
+   Belirli aralıklarla lokal dosya içerisindeki güvenilir kök sertifikalar policy dosyası içerisindeki adresten güncellenilir.
+   Eğer lokaldeki dosya yolunu değiştirmek istiyorsanız storepath parametresini kullanabilirsiniz.
+
+=> İmza Doğrulama Policy dosyasınının bulunduğu dizini ve Zaman Damgası sunucu ayarlarını
+   CAdES için CadesSampleBase.cs sınıfından ve
+   XAdES için xmlsignature-config.xml dosyasından konfigüre edebilirsiniz.
+
+=> Kütüphanemiz .NET Standard 2.0 versiyonunda yayınlanmaktadır. .NET standard 2.0 minimum 4.6.1 versiyonunu desteklese de 4.7.2 versiyonunun kullanılması önerilmektedir.
+   Ayrıntılı bilgi için "https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0" adresini kontrol ediniz.
+
+=> Test projesi .Net Framework 4.6.1 ile oluşturulmuştur.
+
+=> Test projesi Visual Studio 2022 üzerinde test edilmiştir.
+
+=> Test sertifikaları ile çalışılacaksa, kullanılan sertifikaların kökünün API'ye tanıtılması gerekmektedir.
+   Kök sertifikaların bulunduğu dizin(sertifika deposu\test kok sertifika), politika dosyasındaki(config\certval-policy-test.xml)
+   "TrustedCertificateFinderFromFileSystem" bulucusu ile API'ye tanıtılabilir.
+
+=> EST ve üzeri tipinde imza atmak için zaman damgası ayarlarının yapılması gerekmektedir.
+   Test Zaman Damgası hesabı veya Nitelikli Zaman Damgası hesabı almak için "bilgi@kamusm.gov.tr" adresine mail atınız.

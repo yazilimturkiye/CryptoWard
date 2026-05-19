@@ -25,31 +25,34 @@ namespace CryptoWard
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            panel_MainForm.Controls.Clear();
+            if (!MA3Environment.IsInitialized)
+            {
+                var SettingsControl = new SettingsControl();
+                panel_MainForm.Controls.Add(SettingsControl);
+                return;
+            }
+            else
+            {
+                groupBox_Method.Enabled = true;
+                label1.Enabled = true;
+                pictureBox1.Enabled = true;
+                menuStrip1.Enabled = true;
+            }
         }
 
-        private void button_Settings_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button_PFX_Provider_Click(object sender, EventArgs e)
+        private void radioButton_PFX_CheckedChanged(object sender, EventArgs e)
         {
             panel_MainForm.Controls.Clear();
-
             var pfxControl = new PFXControl();
-
             panel_MainForm.Controls.Add(pfxControl);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void toolStripMenuItem_Settings_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            panel_MainForm.Controls.Clear();
+            var SettingsControl = new SettingsControl();
+            panel_MainForm.Controls.Add(SettingsControl);
         }
     }
 }

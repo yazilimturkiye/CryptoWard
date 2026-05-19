@@ -1,22 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\",
+  "WorkspaceRootPath": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|c:\\users\\y\u0131lmaz mert \u00E7ay\u0131r\\documents\\github\\cryptoward\\pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\settingscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:settingscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|c:\\users\\home-pc\\documents\\github\\cryptoward\\settingscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:settingscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\ma3environment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:ma3environment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE71CC6-B2CD-4C5A-B757-4EBF227925D6}|CryptoWard.csproj|solutionrelative:pfxcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +42,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PFXControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\PFXControl.cs",
-              "RelativeDocumentMoniker": "PFXControl.cs",
-              "ToolTip": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\PFXControl.cs [Design]",
-              "RelativeToolTip": "PFXControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T13:08:10.891Z",
-              "EditorCaption": " [Design]"
+              "DocumentIndex": 6,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\Properties\\Resources.resx",
+              "RelativeToolTip": "Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-19T09:57:42.628Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PFXControl.cs",
-              "DocumentMoniker": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\PFXControl.cs",
-              "RelativeDocumentMoniker": "PFXControl.cs",
-              "ToolTip": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\PFXControl.cs",
-              "RelativeToolTip": "PFXControl.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SettingsControl.cs",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\SettingsControl.cs",
+              "RelativeDocumentMoniker": "SettingsControl.cs",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\SettingsControl.cs",
+              "RelativeToolTip": "SettingsControl.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowGAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T13:15:50.091Z",
+              "WhenOpened": "2026-05-17T20:26:54.226Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "SettingsControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\SettingsControl.cs",
+              "RelativeDocumentMoniker": "SettingsControl.cs",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\SettingsControl.cs [Design]",
+              "RelativeToolTip": "SettingsControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T19:55:14.487Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MA3Environment.cs",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\MA3Environment.cs",
+              "RelativeDocumentMoniker": "MA3Environment.cs",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\MA3Environment.cs",
+              "RelativeToolTip": "MA3Environment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T20:23:56.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\MainForm.cs",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T12:55:58.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\Y\u0131lmaz Mert \u00C7ay\u0131r\\Documents\\GitHub\\CryptoWard\\MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\MainForm.cs [Design]",
               "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T12:53:19.062Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PFXControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\PFXControl.cs",
+              "RelativeDocumentMoniker": "PFXControl.cs",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\PFXControl.cs [Design]",
+              "RelativeToolTip": "PFXControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T13:08:10.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PFXControl.cs",
+              "DocumentMoniker": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\PFXControl.cs",
+              "RelativeDocumentMoniker": "PFXControl.cs",
+              "ToolTip": "C:\\Users\\HOME-PC\\Documents\\GitHub\\CryptoWard\\PFXControl.cs",
+              "RelativeToolTip": "PFXControl.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAwwMIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T13:15:50.091Z"
             }
           ]
         }

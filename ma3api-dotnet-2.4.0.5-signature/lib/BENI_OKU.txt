@@ -1,0 +1,39 @@
+CAdES .NET API için Gerekli dll Listesi
+
+	asn1rtcs
+	ma3api-asn
+	ma3api-certstore
+	ma3api-certvalidation
+	ma3api-cmssignature
+	ma3api-common
+	ma3api-crypto
+	ma3api-crypto-bouncyprovider
+	ma3api-infra
+	ma3api-signature
+	ma3api-smartcard
+	Pkcs11Interop
+
+	**Nuget'dan yüklenecek kütüphaneler
+	nunit (Test kodları için) (url = https://www.nuget.org/packages/NUnit/3.13.3/)
+	log4net (url = https://www.nuget.org/packages/log4net/2.0.15)
+	System.DirectoryServices (LDAP entegrasyonu için) (url = https://www.nuget.org/packages/System.DirectoryServices/6.0.0)
+
+XAdES .NET API için Gerekli dll Listesi
+
+	CAdES .NET API dll listesi
+	ma3api-xmlsignature
+
+	**Nuget'dan yüklenecek kütüphane
+	System.Security.Cryptography.Xml (url = https://www.nuget.org/packages/System.Security.Cryptography.Xml/6.0.1)
+
+Mobil İmza için Gerekli dll Listesi
+
+	CAdES .NET API dll listesi
+	ma3api-mssclient
+	ma3api-mssclient-turktelekomprovider
+	ma3api-mssclient-turkcellprovider
+	MobilImzaYapilari
+	VodafoneMobilImza
+    **Nuget'dan yüklenecek kütüphaneler
+	System.ServiceModel.Primitives (url = https://www.nuget.org/packages/System.ServiceModel.Primitives/4.10.0)
+	System.ServiceModel.Http (url = https://www.nuget.org/packages/System.ServiceModel.Http/4.10.0)
