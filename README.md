@@ -1,5 +1,9 @@
 ### 🇹🇷 CryptoWard
 
+<p align="center">
+  <img width="400" height="250" src="https://www.yazilimturkiye.com/wp-content/uploads/2026/07/CryptoWard.jpg">
+</p>
+
 CryptoWard, Windows işletim sistemleri için geliştirilmiş, dijital imzalama ve kriptografik işlemler gerçekleştirebilen hafif ve genişletilebilir bir masaüstü uygulamasıdır.
 
 Uygulama, PFX sertifikaları, Akıllı Kartlar (Smart Card) ve MA3API altyapısını kullanarak güvenli elektronik imzalama işlemlerini kolay ve kullanıcı dostu bir arayüz üzerinden gerçekleştirmenizi sağlar.
@@ -26,21 +30,6 @@ Dijital imza işlemini gerçekleştirir
 
 CryptoWard, seçilen sertifikanın algoritmasını otomatik olarak algılayarak uygun imzalama algoritmasını seçer.
 
-Desteklenen Özellikler (v1.0)
-MA3API Lisans Yönetimi
-PFX ile Dijital İmzalama
-Smart Card ile Dijital İmzalama
-Sertifika Bilgilerini Görüntüleme
-Otomatik RSA / ECDSA Algoritma Tespiti
-Otomatik Digest Algoritması Seçimi
-CAdES Dijital İmza Desteği
-Modern ve Kullanıcı Dostu Arayüz
-Sistem Gereksinimleri
-Windows 10 / Windows 11
-.NET Framework 4.8
-MA3API Runtime
-Geçerli MA3API Lisansı
-
 ### MA3API Lisansı
 
 CryptoWard'ın MA3API tabanlı özelliklerini kullanabilmek için geçerli bir MA3API lisansı gereklidir.
@@ -50,6 +39,10 @@ MA3API lisansına sahip değilseniz lisanslama ve teknik destek hakkında bilgi 
 https://yazilim.kamusm.gov.tr
 
 ### 🇬🇧 CryptoWard
+
+<p align="center">
+  <img width="400" height="250" src="https://www.yazilimturkiye.com/wp-content/uploads/2026/07/CryptoWard.jpg">
+</p>
 
 CryptoWard is a lightweight and extensible desktop application developed for secure cryptographic operations and digital signature management on Microsoft Windows.
 
@@ -76,21 +69,6 @@ Choose the signature format
 Perform the digital signing operation
 
 CryptoWard automatically detects the certificate algorithm and selects the most appropriate signing algorithm.
-
-Current Features (v1.0)
-MA3API License Management
-PFX Digital Signing
-Smart Card Digital Signing
-Certificate Information Viewer
-Automatic RSA / ECDSA Detection
-Automatic Digest Algorithm Selection
-CAdES Digital Signature Support
-Modern and User-Friendly Interface
-System Requirements
-Windows 10 / Windows 11
-.NET Framework 4.8
-MA3API Runtime
-Valid MA3API License
 
 ### MA3API License
 
