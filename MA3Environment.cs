@@ -20,9 +20,7 @@ namespace CryptoWard
     public static class MA3Environment
     {
         public static bool IsInitialized = false;
-
         public static string LoadedLicensePath = "";
-
         public static DateTime LicenseExpirationDate;
 
         public static bool Initialize(string licensePath)

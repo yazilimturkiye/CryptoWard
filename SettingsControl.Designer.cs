@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
             this.textbox_LicensePath = new System.Windows.Forms.TextBox();
             this.button_LoadLicense = new System.Windows.Forms.Button();
-            this.textbox_ConfigPath = new System.Windows.Forms.TextBox();
-            this.button_SelectConfig = new System.Windows.Forms.Button();
             this.button_SelectLicense = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label_APIState = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -41,7 +42,6 @@
             this.textBox_APILisanceID = new System.Windows.Forms.TextBox();
             this.textBox_APILisanceDate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label_APIState = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button_Next = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -56,10 +56,12 @@
             this.textbox_LicensePath.Name = "textbox_LicensePath";
             this.textbox_LicensePath.ReadOnly = true;
             this.textbox_LicensePath.Size = new System.Drawing.Size(534, 27);
-            this.textbox_LicensePath.TabIndex = 0;
+            this.textbox_LicensePath.TabIndex = 5;
+            this.textbox_LicensePath.TabStop = false;
             // 
             // button_LoadLicense
             // 
+            this.button_LoadLicense.Enabled = false;
             this.button_LoadLicense.Location = new System.Drawing.Point(727, 54);
             this.button_LoadLicense.Margin = new System.Windows.Forms.Padding(5);
             this.button_LoadLicense.Name = "button_LoadLicense";
@@ -69,57 +71,64 @@
             this.button_LoadLicense.UseVisualStyleBackColor = true;
             this.button_LoadLicense.Click += new System.EventHandler(this.button_LoadLicense_Click);
             // 
-            // textbox_ConfigPath
-            // 
-            this.textbox_ConfigPath.Location = new System.Drawing.Point(183, 18);
-            this.textbox_ConfigPath.Margin = new System.Windows.Forms.Padding(5);
-            this.textbox_ConfigPath.Name = "textbox_ConfigPath";
-            this.textbox_ConfigPath.Size = new System.Drawing.Size(534, 27);
-            this.textbox_ConfigPath.TabIndex = 2;
-            // 
-            // button_SelectConfig
-            // 
-            this.button_SelectConfig.Location = new System.Drawing.Point(727, 18);
-            this.button_SelectConfig.Margin = new System.Windows.Forms.Padding(5);
-            this.button_SelectConfig.Name = "button_SelectConfig";
-            this.button_SelectConfig.Size = new System.Drawing.Size(218, 37);
-            this.button_SelectConfig.TabIndex = 3;
-            this.button_SelectConfig.Text = "button1";
-            this.button_SelectConfig.UseVisualStyleBackColor = true;
-            // 
             // button_SelectLicense
             // 
             this.button_SelectLicense.Location = new System.Drawing.Point(727, 20);
             this.button_SelectLicense.Margin = new System.Windows.Forms.Padding(5);
             this.button_SelectLicense.Name = "button_SelectLicense";
             this.button_SelectLicense.Size = new System.Drawing.Size(218, 30);
-            this.button_SelectLicense.TabIndex = 4;
+            this.button_SelectLicense.TabIndex = 0;
             this.button_SelectLicense.Text = "Select Lisance";
             this.button_SelectLicense.UseVisualStyleBackColor = true;
             this.button_SelectLicense.Click += new System.EventHandler(this.button_SelectLicense_Click);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.linkLabel1);
             this.groupBox1.Controls.Add(this.label_APIState);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(953, 108);
+            this.groupBox1.Size = new System.Drawing.Size(953, 154);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Silver;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.ForeColor = System.Drawing.Color.Black;
+            this.linkLabel1.LinkColor = System.Drawing.SystemColors.Highlight;
+            this.linkLabel1.Location = new System.Drawing.Point(5, 122);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(180, 21);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "yazilim.kamusm.gov.tr";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.DimGray;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label_APIState
+            // 
+            this.label_APIState.AutoSize = true;
+            this.label_APIState.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_APIState.ForeColor = System.Drawing.Color.Crimson;
+            this.label_APIState.Location = new System.Drawing.Point(468, 16);
+            this.label_APIState.Name = "label_APIState";
+            this.label_APIState.Size = new System.Drawing.Size(116, 21);
+            this.label_APIState.TabIndex = 8;
+            this.label_APIState.Text = "Not Initialized";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label2.Location = new System.Drawing.Point(4, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(699, 84);
+            this.label2.Size = new System.Drawing.Size(905, 105);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Settings Required Before Signing/Encryption\r\n\r\nThis App need MA3 API configuratio" +
-    "n, please complete your config steps blow the page.\r\nRequired for CAdES, PAdES a" +
-    "nd XAdES operations. Current State :";
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // label1
             // 
@@ -142,7 +151,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.textbox_LicensePath);
             this.groupBox2.Controls.Add(this.button_LoadLicense);
-            this.groupBox2.Location = new System.Drawing.Point(3, 111);
+            this.groupBox2.Location = new System.Drawing.Point(3, 156);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(953, 128);
             this.groupBox2.TabIndex = 6;
@@ -166,7 +175,8 @@
             this.textBox_APILisanceID.Name = "textBox_APILisanceID";
             this.textBox_APILisanceID.ReadOnly = true;
             this.textBox_APILisanceID.Size = new System.Drawing.Size(534, 27);
-            this.textBox_APILisanceID.TabIndex = 9;
+            this.textBox_APILisanceID.TabIndex = 7;
+            this.textBox_APILisanceID.TabStop = false;
             // 
             // textBox_APILisanceDate
             // 
@@ -175,7 +185,8 @@
             this.textBox_APILisanceDate.Name = "textBox_APILisanceDate";
             this.textBox_APILisanceDate.ReadOnly = true;
             this.textBox_APILisanceDate.Size = new System.Drawing.Size(534, 27);
-            this.textBox_APILisanceDate.TabIndex = 8;
+            this.textBox_APILisanceDate.TabIndex = 6;
+            this.textBox_APILisanceDate.TabStop = false;
             // 
             // label3
             // 
@@ -188,37 +199,24 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Expiration";
             // 
-            // label_APIState
-            // 
-            this.label_APIState.AutoSize = true;
-            this.label_APIState.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_APIState.ForeColor = System.Drawing.Color.Crimson;
-            this.label_APIState.Location = new System.Drawing.Point(520, 79);
-            this.label_APIState.Name = "label_APIState";
-            this.label_APIState.Size = new System.Drawing.Size(116, 21);
-            this.label_APIState.TabIndex = 8;
-            this.label_APIState.Text = "Not Initialized";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button_Next);
-            this.groupBox3.Controls.Add(this.button_SelectConfig);
-            this.groupBox3.Controls.Add(this.textbox_ConfigPath);
-            this.groupBox3.Location = new System.Drawing.Point(3, 239);
+            this.groupBox3.Location = new System.Drawing.Point(3, 284);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(953, 278);
+            this.groupBox3.Size = new System.Drawing.Size(953, 263);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
             // button_Next
             // 
             this.button_Next.Enabled = false;
-            this.button_Next.Location = new System.Drawing.Point(733, 208);
+            this.button_Next.Location = new System.Drawing.Point(727, 209);
             this.button_Next.Margin = new System.Windows.Forms.Padding(5);
             this.button_Next.Name = "button_Next";
-            this.button_Next.Size = new System.Drawing.Size(218, 62);
-            this.button_Next.TabIndex = 5;
-            this.button_Next.Text = "Next";
+            this.button_Next.Size = new System.Drawing.Size(218, 46);
+            this.button_Next.TabIndex = 2;
+            this.button_Next.Text = "OK";
             this.button_Next.UseVisualStyleBackColor = true;
             this.button_Next.Click += new System.EventHandler(this.button_Next_Click);
             // 
@@ -232,14 +230,13 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SettingsControl";
-            this.Size = new System.Drawing.Size(959, 520);
+            this.Size = new System.Drawing.Size(959, 550);
             this.Load += new System.EventHandler(this.SettingsControl_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,8 +245,6 @@
 
         private System.Windows.Forms.TextBox textbox_LicensePath;
         private System.Windows.Forms.Button button_LoadLicense;
-        private System.Windows.Forms.TextBox textbox_ConfigPath;
-        private System.Windows.Forms.Button button_SelectConfig;
         private System.Windows.Forms.Button button_SelectLicense;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
@@ -262,5 +257,6 @@
         private System.Windows.Forms.Label label_APIState;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button_Next;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

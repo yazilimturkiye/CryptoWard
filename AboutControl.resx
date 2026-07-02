@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Settings Required Before Signing/Encryption Current State :
+  <data name="label1.Text" xml:space="preserve">
+    <value>CryptoWard is a lightweight and extensible desktop application designed for secure cryptographic operations and digital signature management.
+The application provides a unified interface for certificate-based security technologies, allowing users to perform digital signing, certificate inspection and other cryptographic operations through multiple providers and devices.
 
-This app needs MA3 API configuration. Please complete the configuration steps below. These settings are necessary
-for CAdES, PAdES, and XAdES operations. If you do not have a license or configuration information,
-please contact at this web address.</value>
+If you do not have a valid MA3API license, please contact TÜBİTAK BİLGEM Kamu Sertifikasyon Merkezi (Kamu SM) or visit https://yazilim.kamusm.gov.tr for licensing information and support.
+</value>
   </data>
 </root>

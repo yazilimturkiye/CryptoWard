@@ -117,11 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Settings Required Before Signing/Encryption Current State :
-
-This app needs MA3 API configuration. Please complete the configuration steps below. These settings are necessary
-for CAdES, PAdES, and XAdES operations. If you do not have a license or configuration information,
-please contact at this web address.</value>
-  </data>
 </root>

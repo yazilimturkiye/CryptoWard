@@ -146,7 +146,6 @@ namespace CryptoWard
                 if (cert.PublicKey.Key != null)
                 {
                     AddPFXItems("Key Size",cert.PublicKey.Key.KeySize + " bit");
-
                     AddPFXItems("Key Type",cert.PublicKey.Key.GetType().Name);
                 }
             }
@@ -171,6 +170,7 @@ namespace CryptoWard
                 if (selectPFX.ShowDialog() == DialogResult.OK)
                 {
                     textBox_PFX_Path.Text = selectPFX.FileName;
+                    button_PFX_Pass.Enabled = true;
                 }
             }
         }
@@ -183,6 +183,10 @@ namespace CryptoWard
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 textBox_File_Path.Text = ofd.FileName;
+                groupBox_SignatureFormat.Enabled = true;
+                groupBox_SignatureType.Enabled = true;
+                groupBox_HashAlgorithm.Enabled = true;
+                button_Sign.Enabled = true;
             }
         }
 
@@ -455,31 +459,27 @@ namespace CryptoWard
 
                 if (string.IsNullOrWhiteSpace(pfxPath))
                 {
-                    MessageBox.Show("Please select a PFX file.");
+                    MessageBox.Show("Please select a PFX file.","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
                 if (!File.Exists(pfxPath))
                 {
-                    MessageBox.Show("PFX file not found.");
+                    MessageBox.Show("PFX file not found.","Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
                 listView_PFX.Items.Clear();
-
                 X509Certificate2Collection collection = new X509Certificate2Collection();
-
                 collection.Import(pfxPath,password,X509KeyStorageFlags.Exportable);
-
                 foreach (X509Certificate2 cert in collection)
                 {
                     ShowPFXItems(cert);
                     ConfigureDigestOptions(cert);
                 }
+                button_Select_File.Enabled = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Invalid password or corrupted PFX.\n\n" + ex.Message);
+                MessageBox.Show("Invalid password or corrupted PFX.\n" + ex.Message,"Warning",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
     }

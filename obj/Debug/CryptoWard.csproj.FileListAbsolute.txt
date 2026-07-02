@@ -131,3 +131,5 @@ C:\Users\HOME-PC\Documents\GitHub\CryptoWard\bin\Debug\ma3api-xmlsignature.resou
 C:\Users\HOME-PC\Documents\GitHub\CryptoWard\bin\Debug\log4net.pdb
 C:\Users\HOME-PC\Documents\GitHub\CryptoWard\bin\Debug\log4net.xml
 C:\Users\HOME-PC\Documents\GitHub\CryptoWard\obj\Debug\CryptoWard.SettingsControl.resources
+C:\Users\HOME-PC\Documents\GitHub\CryptoWard\obj\Debug\CryptoWard.SCControl.resources
+C:\Users\HOME-PC\Documents\GitHub\CryptoWard\obj\Debug\CryptoWard.AboutControl.resources

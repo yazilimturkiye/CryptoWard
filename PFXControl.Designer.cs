@@ -46,17 +46,17 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox_SignatureFormat = new System.Windows.Forms.GroupBox();
             this.radioButton_PFXXAdES = new System.Windows.Forms.RadioButton();
             this.radioButton_PFXPAdES = new System.Windows.Forms.RadioButton();
             this.radioButton_PFXCAdES = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox_SignatureType = new System.Windows.Forms.GroupBox();
             this.radioButton_PFXEnveloped = new System.Windows.Forms.RadioButton();
             this.radioButton_PFXAttached = new System.Windows.Forms.RadioButton();
             this.radioButton_PFXDetached = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox_HashAlgorithm = new System.Windows.Forms.GroupBox();
             this.radioButton_PFXSHA512 = new System.Windows.Forms.RadioButton();
             this.radioButton_PFXSHA384 = new System.Windows.Forms.RadioButton();
             this.radioButton_PFXSHA256 = new System.Windows.Forms.RadioButton();
@@ -64,9 +64,9 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.groupBox_SignatureFormat.SuspendLayout();
+            this.groupBox_SignatureType.SuspendLayout();
+            this.groupBox_HashAlgorithm.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_Select_PFX_File
@@ -90,6 +90,7 @@
             // 
             // textBox_PFX_Path
             // 
+            this.textBox_PFX_Path.Enabled = false;
             this.textBox_PFX_Path.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_PFX_Path.Location = new System.Drawing.Point(166, 16);
             this.textBox_PFX_Path.Name = "textBox_PFX_Path";
@@ -108,16 +109,18 @@
             // 
             // button_Select_File
             // 
+            this.button_Select_File.Enabled = false;
             this.button_Select_File.Location = new System.Drawing.Point(729, 20);
             this.button_Select_File.Name = "button_Select_File";
             this.button_Select_File.Size = new System.Drawing.Size(218, 30);
             this.button_Select_File.TabIndex = 4;
-            this.button_Select_File.Text = "Select Files";
+            this.button_Select_File.Text = "Select File";
             this.button_Select_File.UseVisualStyleBackColor = true;
             this.button_Select_File.Click += new System.EventHandler(this.button_Select_File_Click);
             // 
             // textBox_File_Path
             // 
+            this.textBox_File_Path.Enabled = false;
             this.textBox_File_Path.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_File_Path.Location = new System.Drawing.Point(166, 20);
             this.textBox_File_Path.Name = "textBox_File_Path";
@@ -127,12 +130,13 @@
             // 
             // button_Sign
             // 
+            this.button_Sign.Enabled = false;
             this.button_Sign.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Sign.Location = new System.Drawing.Point(738, 474);
+            this.button_Sign.Location = new System.Drawing.Point(738, 501);
             this.button_Sign.Name = "button_Sign";
-            this.button_Sign.Size = new System.Drawing.Size(218, 43);
+            this.button_Sign.Size = new System.Drawing.Size(218, 46);
             this.button_Sign.TabIndex = 6;
-            this.button_Sign.Text = "Sign";
+            this.button_Sign.Text = "Sign with PFX";
             this.button_Sign.UseVisualStyleBackColor = true;
             this.button_Sign.Click += new System.EventHandler(this.button_Sign_Click);
             // 
@@ -152,6 +156,7 @@
             // 
             // button_PFX_Pass
             // 
+            this.button_PFX_Pass.Enabled = false;
             this.button_PFX_Pass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_PFX_Pass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button_PFX_Pass.ImageList = this.ımageList1;
@@ -188,7 +193,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.listView_PFX);
-            this.groupBox2.Location = new System.Drawing.Point(3, 91);
+            this.groupBox2.Location = new System.Drawing.Point(3, 90);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(953, 165);
             this.groupBox2.TabIndex = 8;
@@ -237,24 +242,25 @@
             this.groupBox3.Controls.Add(this.textBox_File_Path);
             this.groupBox3.Controls.Add(this.button_Select_File);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(3, 257);
+            this.groupBox3.Location = new System.Drawing.Point(3, 255);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(953, 57);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             // 
-            // groupBox4
+            // groupBox_SignatureFormat
             // 
-            this.groupBox4.Controls.Add(this.radioButton_PFXXAdES);
-            this.groupBox4.Controls.Add(this.radioButton_PFXPAdES);
-            this.groupBox4.Controls.Add(this.radioButton_PFXCAdES);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(3, 315);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(953, 51);
-            this.groupBox4.TabIndex = 11;
-            this.groupBox4.TabStop = false;
+            this.groupBox_SignatureFormat.Controls.Add(this.radioButton_PFXXAdES);
+            this.groupBox_SignatureFormat.Controls.Add(this.radioButton_PFXPAdES);
+            this.groupBox_SignatureFormat.Controls.Add(this.radioButton_PFXCAdES);
+            this.groupBox_SignatureFormat.Controls.Add(this.label5);
+            this.groupBox_SignatureFormat.Enabled = false;
+            this.groupBox_SignatureFormat.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_SignatureFormat.Location = new System.Drawing.Point(3, 312);
+            this.groupBox_SignatureFormat.Name = "groupBox_SignatureFormat";
+            this.groupBox_SignatureFormat.Size = new System.Drawing.Size(953, 51);
+            this.groupBox_SignatureFormat.TabIndex = 11;
+            this.groupBox_SignatureFormat.TabStop = false;
             // 
             // radioButton_PFXXAdES
             // 
@@ -263,7 +269,6 @@
             this.radioButton_PFXXAdES.Name = "radioButton_PFXXAdES";
             this.radioButton_PFXXAdES.Size = new System.Drawing.Size(78, 25);
             this.radioButton_PFXXAdES.TabIndex = 10;
-            this.radioButton_PFXXAdES.TabStop = true;
             this.radioButton_PFXXAdES.Text = "XAdES";
             this.radioButton_PFXXAdES.UseVisualStyleBackColor = true;
             // 
@@ -274,13 +279,13 @@
             this.radioButton_PFXPAdES.Name = "radioButton_PFXPAdES";
             this.radioButton_PFXPAdES.Size = new System.Drawing.Size(78, 25);
             this.radioButton_PFXPAdES.TabIndex = 9;
-            this.radioButton_PFXPAdES.TabStop = true;
             this.radioButton_PFXPAdES.Text = "PAdES";
             this.radioButton_PFXPAdES.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXCAdES
             // 
             this.radioButton_PFXCAdES.AutoSize = true;
+            this.radioButton_PFXCAdES.Checked = true;
             this.radioButton_PFXCAdES.Location = new System.Drawing.Point(166, 18);
             this.radioButton_PFXCAdES.Name = "radioButton_PFXCAdES";
             this.radioButton_PFXCAdES.Size = new System.Drawing.Size(82, 25);
@@ -300,18 +305,19 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Signature Format";
             // 
-            // groupBox5
+            // groupBox_SignatureType
             // 
-            this.groupBox5.Controls.Add(this.radioButton_PFXEnveloped);
-            this.groupBox5.Controls.Add(this.radioButton_PFXAttached);
-            this.groupBox5.Controls.Add(this.radioButton_PFXDetached);
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(3, 367);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(953, 51);
-            this.groupBox5.TabIndex = 12;
-            this.groupBox5.TabStop = false;
+            this.groupBox_SignatureType.Controls.Add(this.radioButton_PFXEnveloped);
+            this.groupBox_SignatureType.Controls.Add(this.radioButton_PFXAttached);
+            this.groupBox_SignatureType.Controls.Add(this.radioButton_PFXDetached);
+            this.groupBox_SignatureType.Controls.Add(this.label6);
+            this.groupBox_SignatureType.Enabled = false;
+            this.groupBox_SignatureType.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_SignatureType.Location = new System.Drawing.Point(3, 363);
+            this.groupBox_SignatureType.Name = "groupBox_SignatureType";
+            this.groupBox_SignatureType.Size = new System.Drawing.Size(953, 51);
+            this.groupBox_SignatureType.TabIndex = 12;
+            this.groupBox_SignatureType.TabStop = false;
             // 
             // radioButton_PFXEnveloped
             // 
@@ -320,7 +326,6 @@
             this.radioButton_PFXEnveloped.Name = "radioButton_PFXEnveloped";
             this.radioButton_PFXEnveloped.Size = new System.Drawing.Size(112, 25);
             this.radioButton_PFXEnveloped.TabIndex = 10;
-            this.radioButton_PFXEnveloped.TabStop = true;
             this.radioButton_PFXEnveloped.Text = "Enveloped";
             this.radioButton_PFXEnveloped.UseVisualStyleBackColor = true;
             // 
@@ -331,13 +336,13 @@
             this.radioButton_PFXAttached.Name = "radioButton_PFXAttached";
             this.radioButton_PFXAttached.Size = new System.Drawing.Size(107, 25);
             this.radioButton_PFXAttached.TabIndex = 9;
-            this.radioButton_PFXAttached.TabStop = true;
             this.radioButton_PFXAttached.Text = "Attached";
             this.radioButton_PFXAttached.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXDetached
             // 
             this.radioButton_PFXDetached.AutoSize = true;
+            this.radioButton_PFXDetached.Checked = true;
             this.radioButton_PFXDetached.Location = new System.Drawing.Point(166, 18);
             this.radioButton_PFXDetached.Name = "radioButton_PFXDetached";
             this.radioButton_PFXDetached.Size = new System.Drawing.Size(109, 25);
@@ -357,18 +362,19 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Signature Type";
             // 
-            // groupBox6
+            // groupBox_HashAlgorithm
             // 
-            this.groupBox6.Controls.Add(this.radioButton_PFXSHA512);
-            this.groupBox6.Controls.Add(this.radioButton_PFXSHA384);
-            this.groupBox6.Controls.Add(this.radioButton_PFXSHA256);
-            this.groupBox6.Controls.Add(this.label7);
-            this.groupBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(3, 419);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(953, 51);
-            this.groupBox6.TabIndex = 13;
-            this.groupBox6.TabStop = false;
+            this.groupBox_HashAlgorithm.Controls.Add(this.radioButton_PFXSHA512);
+            this.groupBox_HashAlgorithm.Controls.Add(this.radioButton_PFXSHA384);
+            this.groupBox_HashAlgorithm.Controls.Add(this.radioButton_PFXSHA256);
+            this.groupBox_HashAlgorithm.Controls.Add(this.label7);
+            this.groupBox_HashAlgorithm.Enabled = false;
+            this.groupBox_HashAlgorithm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_HashAlgorithm.Location = new System.Drawing.Point(3, 414);
+            this.groupBox_HashAlgorithm.Name = "groupBox_HashAlgorithm";
+            this.groupBox_HashAlgorithm.Size = new System.Drawing.Size(953, 51);
+            this.groupBox_HashAlgorithm.TabIndex = 13;
+            this.groupBox_HashAlgorithm.TabStop = false;
             // 
             // radioButton_PFXSHA512
             // 
@@ -377,7 +383,6 @@
             this.radioButton_PFXSHA512.Name = "radioButton_PFXSHA512";
             this.radioButton_PFXSHA512.Size = new System.Drawing.Size(87, 25);
             this.radioButton_PFXSHA512.TabIndex = 10;
-            this.radioButton_PFXSHA512.TabStop = true;
             this.radioButton_PFXSHA512.Text = "SHA512";
             this.radioButton_PFXSHA512.UseVisualStyleBackColor = true;
             // 
@@ -388,13 +393,13 @@
             this.radioButton_PFXSHA384.Name = "radioButton_PFXSHA384";
             this.radioButton_PFXSHA384.Size = new System.Drawing.Size(87, 25);
             this.radioButton_PFXSHA384.TabIndex = 9;
-            this.radioButton_PFXSHA384.TabStop = true;
             this.radioButton_PFXSHA384.Text = "SHA384";
             this.radioButton_PFXSHA384.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXSHA256
             // 
             this.radioButton_PFXSHA256.AutoSize = true;
+            this.radioButton_PFXSHA256.Checked = true;
             this.radioButton_PFXSHA256.Location = new System.Drawing.Point(166, 17);
             this.radioButton_PFXSHA256.Name = "radioButton_PFXSHA256";
             this.radioButton_PFXSHA256.Size = new System.Drawing.Size(87, 25);
@@ -418,9 +423,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox_HashAlgorithm);
+            this.Controls.Add(this.groupBox_SignatureType);
+            this.Controls.Add(this.groupBox_SignatureFormat);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -428,19 +433,19 @@
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PFXControl";
-            this.Size = new System.Drawing.Size(959, 520);
+            this.Size = new System.Drawing.Size(959, 550);
             this.Load += new System.EventHandler(this.PFXControl_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.groupBox_SignatureFormat.ResumeLayout(false);
+            this.groupBox_SignatureFormat.PerformLayout();
+            this.groupBox_SignatureType.ResumeLayout(false);
+            this.groupBox_SignatureType.PerformLayout();
+            this.groupBox_HashAlgorithm.ResumeLayout(false);
+            this.groupBox_HashAlgorithm.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -463,17 +468,17 @@
         private System.Windows.Forms.Button button_PFX_Pass;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox_SignatureFormat;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton radioButton_PFXXAdES;
         private System.Windows.Forms.RadioButton radioButton_PFXPAdES;
         private System.Windows.Forms.RadioButton radioButton_PFXCAdES;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox_SignatureType;
         private System.Windows.Forms.RadioButton radioButton_PFXEnveloped;
         private System.Windows.Forms.RadioButton radioButton_PFXAttached;
         private System.Windows.Forms.RadioButton radioButton_PFXDetached;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox_HashAlgorithm;
         private System.Windows.Forms.RadioButton radioButton_PFXSHA512;
         private System.Windows.Forms.RadioButton radioButton_PFXSHA384;
         private System.Windows.Forms.RadioButton radioButton_PFXSHA256;
