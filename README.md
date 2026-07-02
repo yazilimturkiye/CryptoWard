@@ -22,11 +22,11 @@ Uygulama ilk açıldığında kullanıcıdan MA3API lisans yapılandırmasını 
 
 Daha sonra kullanıcı;
 
-İmzalama yöntemini seçer (PFX veya Smart Card)
-Sertifikasını yükler veya Akıllı Kartını doğrular
-İmzalanacak dosyayı seçer
-İmzalama formatını belirler
-Dijital imza işlemini gerçekleştirir
+- İmzalama yöntemini seçer (PFX veya Smart Card)
+- Sertifikasını yükler veya Akıllı Kartını doğrular
+- İmzalanacak dosyayı seçer
+- İmzalama formatını belirler
+- Dijital imza işlemini gerçekleştirir
 
 CryptoWard, seçilen sertifikanın algoritmasını otomatik olarak algılayarak uygun imzalama algoritmasını seçer.
 
@@ -62,11 +62,11 @@ When the application starts for the first time, users are asked to complete the 
 
 The signing workflow consists of the following steps:
 
-Select the signing method (PFX or Smart Card)
-Load the certificate or unlock the Smart Card
-Select the document to be signed
-Choose the signature format
-Perform the digital signing operation
+- Select the signing method (PFX or Smart Card)
+- Load the certificate or unlock the Smart Card
+- Select the document to be signed
+- Choose the signature format
+- Perform the digital signing operation
 
 CryptoWard automatically detects the certificate algorithm and selects the most appropriate signing algorithm.
 
