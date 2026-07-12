@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
             this.textbox_LicensePath = new System.Windows.Forms.TextBox();
             this.button_LoadLicense = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button_Next = new System.Windows.Forms.Button();
+            this.toolTip_SettingsControl = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -58,6 +60,7 @@
             this.textbox_LicensePath.Size = new System.Drawing.Size(534, 27);
             this.textbox_LicensePath.TabIndex = 5;
             this.textbox_LicensePath.TabStop = false;
+            this.toolTip_SettingsControl.SetToolTip(this.textbox_LicensePath, "Lisance Path");
             // 
             // button_LoadLicense
             // 
@@ -105,6 +108,7 @@
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "yazilim.kamusm.gov.tr";
+            this.toolTip_SettingsControl.SetToolTip(this.linkLabel1, "Go to WebSite");
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.DimGray;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
@@ -177,6 +181,7 @@
             this.textBox_APILisanceID.Size = new System.Drawing.Size(534, 27);
             this.textBox_APILisanceID.TabIndex = 7;
             this.textBox_APILisanceID.TabStop = false;
+            this.toolTip_SettingsControl.SetToolTip(this.textBox_APILisanceID, "Lisance ID");
             // 
             // textBox_APILisanceDate
             // 
@@ -187,6 +192,7 @@
             this.textBox_APILisanceDate.Size = new System.Drawing.Size(534, 27);
             this.textBox_APILisanceDate.TabIndex = 6;
             this.textBox_APILisanceDate.TabStop = false;
+            this.toolTip_SettingsControl.SetToolTip(this.textBox_APILisanceDate, "Expiration Date");
             // 
             // label3
             // 
@@ -258,5 +264,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button_Next;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ToolTip toolTip_SettingsControl;
     }
 }

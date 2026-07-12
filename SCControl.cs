@@ -271,7 +271,7 @@ namespace CryptoWard
                 string[] terminals =SmartOp.getCardTerminals();
                 if (terminals == null || terminals.Length == 0)
                 {
-                    MessageBox.Show("No smart card reader found.");
+                    MessageBox.Show("No smart card reader found.","No Readers Found!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 foreach (string terminal in terminals)
@@ -284,7 +284,7 @@ namespace CryptoWard
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Reader enumeration failed.\n\n" + ex.Message);
+                MessageBox.Show("Reader enumeration failed.\n\n" + ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
         private void SCControl_Load(object sender, EventArgs e)
@@ -314,14 +314,14 @@ namespace CryptoWard
             {
                 if (comboBox_SCReaders.SelectedItem == null)
                 {
-                    MessageBox.Show("Please select a smart card reader.");
+                    MessageBox.Show("Please select a smart card reader.","No Readers Found!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 string selectedReader =comboBox_SCReaders.SelectedItem.ToString();
                 string pin = textBox_SCPin.Text;
                 if (string.IsNullOrWhiteSpace(pin))
                 {
-                    MessageBox.Show("Please enter smart card PIN.");
+                    MessageBox.Show("Please enter smart card PIN.", "PIN Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -352,7 +352,7 @@ namespace CryptoWard
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Smart card login failed.\n\n" +ex.Message);
+                MessageBox.Show("Smart card login failed.\n\n" + ex.Message, "Login Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (comboBox_SCCertificates.SelectedIndex < 0)
                 return;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PFXControl));
             this.button_Select_PFX_File = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.textBox_PFX_Path = new System.Windows.Forms.TextBox();
@@ -61,6 +62,7 @@
             this.radioButton_PFXSHA384 = new System.Windows.Forms.RadioButton();
             this.radioButton_PFXSHA256 = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
+            this.toolTip_PFXControl = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -97,6 +99,7 @@
             this.textBox_PFX_Path.ReadOnly = true;
             this.textBox_PFX_Path.Size = new System.Drawing.Size(557, 27);
             this.textBox_PFX_Path.TabIndex = 2;
+            this.toolTip_PFXControl.SetToolTip(this.textBox_PFX_Path, "PFX File Path");
             // 
             // textBox_PFX_Pass
             // 
@@ -106,6 +109,7 @@
             this.textBox_PFX_Pass.PasswordChar = '*';
             this.textBox_PFX_Pass.Size = new System.Drawing.Size(557, 27);
             this.textBox_PFX_Pass.TabIndex = 3;
+            this.toolTip_PFXControl.SetToolTip(this.textBox_PFX_Pass, "PFX File Password");
             // 
             // button_Select_File
             // 
@@ -127,6 +131,7 @@
             this.textBox_File_Path.ReadOnly = true;
             this.textBox_File_Path.Size = new System.Drawing.Size(557, 27);
             this.textBox_File_Path.TabIndex = 5;
+            this.toolTip_PFXControl.SetToolTip(this.textBox_File_Path, "File Path");
             // 
             // button_Sign
             // 
@@ -270,6 +275,8 @@
             this.radioButton_PFXXAdES.Size = new System.Drawing.Size(78, 25);
             this.radioButton_PFXXAdES.TabIndex = 10;
             this.radioButton_PFXXAdES.Text = "XAdES";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXXAdES, "XAdES (XML Advanced Electronic Signatures)\r\n\r\nCreates an XML-based digital signat" +
+        "ure.\r\nRecommended for XML documents and e-Government integrations.");
             this.radioButton_PFXXAdES.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXPAdES
@@ -280,6 +287,8 @@
             this.radioButton_PFXPAdES.Size = new System.Drawing.Size(78, 25);
             this.radioButton_PFXPAdES.TabIndex = 9;
             this.radioButton_PFXPAdES.Text = "PAdES";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXPAdES, "PAdES (PDF Advanced Electronic Signatures)\r\n\r\nCreates a digital signature embedde" +
+        "d directly into PDF documents.\r\nUse this format when signing PDF files.");
             this.radioButton_PFXPAdES.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXCAdES
@@ -292,6 +301,9 @@
             this.radioButton_PFXCAdES.TabIndex = 8;
             this.radioButton_PFXCAdES.TabStop = true;
             this.radioButton_PFXCAdES.Text = "CAdES";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXCAdES, "CAdES (CMS Advanced Electronic Signatures)\r\n\r\nCreates a CMS/PKCS#7 based digital " +
+        "signature for any type of file.\r\nRecommended for general-purpose electronic sign" +
+        "ature operations.");
             this.radioButton_PFXCAdES.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -327,6 +339,9 @@
             this.radioButton_PFXEnveloped.Size = new System.Drawing.Size(112, 25);
             this.radioButton_PFXEnveloped.TabIndex = 10;
             this.radioButton_PFXEnveloped.Text = "Enveloped";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXEnveloped, "The original document is embedded inside the signed document together with the di" +
+        "gital signature.\r\nThis format is commonly used for XML-based signature structure" +
+        "s.");
             this.radioButton_PFXEnveloped.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXAttached
@@ -337,6 +352,9 @@
             this.radioButton_PFXAttached.Size = new System.Drawing.Size(107, 25);
             this.radioButton_PFXAttached.TabIndex = 9;
             this.radioButton_PFXAttached.Text = "Attached";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXAttached, "The digital signature is stored together with the original document in a single s" +
+        "igned file.\r\nThe signed file contains both the original content and the digital " +
+        "signature.");
             this.radioButton_PFXAttached.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXDetached
@@ -349,6 +367,9 @@
             this.radioButton_PFXDetached.TabIndex = 8;
             this.radioButton_PFXDetached.TabStop = true;
             this.radioButton_PFXDetached.Text = "Detached";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXDetached, "The digital signature is stored in a separate signature file while the original d" +
+        "ocument remains unchanged.\r\nBoth the original file and the signature file are re" +
+        "quired during signature verification.");
             this.radioButton_PFXDetached.UseVisualStyleBackColor = true;
             // 
             // label6
@@ -384,6 +405,9 @@
             this.radioButton_PFXSHA512.Size = new System.Drawing.Size(87, 25);
             this.radioButton_PFXSHA512.TabIndex = 10;
             this.radioButton_PFXSHA512.Text = "SHA512";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXSHA512, "SHA-512 is a cryptographic hash algorithm that produces a 512-bit message digest." +
+        "\r\nIt offers the highest security level among the SHA-2 algorithms supported by t" +
+        "his application.");
             this.radioButton_PFXSHA512.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXSHA384
@@ -394,6 +418,9 @@
             this.radioButton_PFXSHA384.Size = new System.Drawing.Size(87, 25);
             this.radioButton_PFXSHA384.TabIndex = 9;
             this.radioButton_PFXSHA384.Text = "SHA384";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXSHA384, "SHA-384 is a member of the SHA-2 family that produces a 384-bit message digest.\r\n" +
+        "It provides a higher security level than SHA-256 and is commonly used with large" +
+        "r elliptic curve cryptography keys.");
             this.radioButton_PFXSHA384.UseVisualStyleBackColor = true;
             // 
             // radioButton_PFXSHA256
@@ -406,6 +433,7 @@
             this.radioButton_PFXSHA256.TabIndex = 8;
             this.radioButton_PFXSHA256.TabStop = true;
             this.radioButton_PFXSHA256.Text = "SHA256";
+            this.toolTip_PFXControl.SetToolTip(this.radioButton_PFXSHA256, resources.GetString("radioButton_PFXSHA256.ToolTip"));
             this.radioButton_PFXSHA256.UseVisualStyleBackColor = true;
             // 
             // label7
@@ -483,5 +511,6 @@
         private System.Windows.Forms.RadioButton radioButton_PFXSHA384;
         private System.Windows.Forms.RadioButton radioButton_PFXSHA256;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolTip toolTip_PFXControl;
     }
 }

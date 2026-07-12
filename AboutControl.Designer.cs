@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutControl));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel_YazilimTurk = new System.Windows.Forms.LinkLabel();
             this.button_AboutOK = new System.Windows.Forms.Button();
+            this.toolTip_AboutControl = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -84,6 +88,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -97,6 +103,25 @@
             this.groupBox2.Size = new System.Drawing.Size(953, 125);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(344, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 19);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "v2.4.0.5";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(260, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(78, 21);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "MA3 API";
             // 
             // label4
             // 
@@ -135,13 +160,14 @@
             this.linkLabel_YazilimKamuSM.TabIndex = 10;
             this.linkLabel_YazilimKamuSM.TabStop = true;
             this.linkLabel_YazilimKamuSM.Text = "yazilim.kamusm.gov.tr";
+            this.toolTip_AboutControl.SetToolTip(this.linkLabel_YazilimKamuSM, "Go To WebSite");
             this.linkLabel_YazilimKamuSM.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_YazilimKamuSM_LinkClicked);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(214, 16);
+            this.label3.Location = new System.Drawing.Point(214, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 19);
             this.label3.TabIndex = 9;
@@ -157,6 +183,7 @@
             this.linkLabel_YazilimTurk.TabIndex = 8;
             this.linkLabel_YazilimTurk.TabStop = true;
             this.linkLabel_YazilimTurk.Text = "yazilimturkiye.com";
+            this.toolTip_AboutControl.SetToolTip(this.linkLabel_YazilimTurk, "Go To WebSite");
             this.linkLabel_YazilimTurk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_YazilimTurk_LinkClicked);
             // 
             // button_AboutOK
@@ -203,5 +230,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button_AboutOK;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolTip toolTip_AboutControl;
     }
 }

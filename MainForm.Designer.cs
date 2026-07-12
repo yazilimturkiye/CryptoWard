@@ -98,6 +98,7 @@
             this.linkLabel_yazilimturk.TabIndex = 7;
             this.linkLabel_yazilimturk.TabStop = true;
             this.linkLabel_yazilimturk.Text = "yazilimturkiye.com";
+            this.toolTip1.SetToolTip(this.linkLabel_yazilimturk, "Go to WebSite");
             this.linkLabel_yazilimturk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_yazilimturk_LinkClicked);
             // 
             // groupBox_Method
@@ -133,6 +134,7 @@
             this.radioButton_SmartCard.Size = new System.Drawing.Size(114, 25);
             this.radioButton_SmartCard.TabIndex = 1;
             this.radioButton_SmartCard.Text = "SmartCard";
+            this.toolTip1.SetToolTip(this.radioButton_SmartCard, "Sign With SmartCard");
             this.radioButton_SmartCard.UseVisualStyleBackColor = true;
             this.radioButton_SmartCard.CheckedChanged += new System.EventHandler(this.radioButton_SmartCard_CheckedChanged);
             // 
@@ -145,6 +147,7 @@
             this.radioButton_PFX.Size = new System.Drawing.Size(54, 25);
             this.radioButton_PFX.TabIndex = 0;
             this.radioButton_PFX.Text = "PFX";
+            this.toolTip1.SetToolTip(this.radioButton_PFX, "Sign With PFX");
             this.radioButton_PFX.UseVisualStyleBackColor = true;
             this.radioButton_PFX.CheckedChanged += new System.EventHandler(this.radioButton_PFX_CheckedChanged);
             // 

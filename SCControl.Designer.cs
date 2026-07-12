@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SCControl));
             this.groupBox_SCReader = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox_SCPin = new System.Windows.Forms.TextBox();
@@ -61,6 +63,7 @@
             this.textBox_SCFilePath = new System.Windows.Forms.TextBox();
             this.button_SCSelectFile = new System.Windows.Forms.Button();
             this.button_SCSign = new System.Windows.Forms.Button();
+            this.toolTip_SCControl = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox_SCReader.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox_SCDigest.SuspendLayout();
@@ -103,6 +106,7 @@
             this.textBox_SCPin.PasswordChar = '*';
             this.textBox_SCPin.Size = new System.Drawing.Size(143, 27);
             this.textBox_SCPin.TabIndex = 2;
+            this.toolTip_SCControl.SetToolTip(this.textBox_SCPin, "SmartCard PIN");
             // 
             // button_SCUnlock
             // 
@@ -123,6 +127,7 @@
             this.comboBox_SCCertificates.Name = "comboBox_SCCertificates";
             this.comboBox_SCCertificates.Size = new System.Drawing.Size(299, 29);
             this.comboBox_SCCertificates.TabIndex = 1;
+            this.toolTip_SCControl.SetToolTip(this.comboBox_SCCertificates, "Dijital Certificates");
             this.comboBox_SCCertificates.SelectedIndexChanged += new System.EventHandler(this.comboBox_SCCertificates_SelectedIndexChanged);
             // 
             // label1
@@ -163,6 +168,7 @@
             this.comboBox_SCReaders.Name = "comboBox_SCReaders";
             this.comboBox_SCReaders.Size = new System.Drawing.Size(550, 29);
             this.comboBox_SCReaders.TabIndex = 0;
+            this.toolTip_SCControl.SetToolTip(this.comboBox_SCReaders, "SmartCard Readers");
             // 
             // groupBox1
             // 
@@ -221,6 +227,9 @@
             this.radioButton_SCSHA512.TabIndex = 10;
             this.radioButton_SCSHA512.TabStop = true;
             this.radioButton_SCSHA512.Text = "SHA512";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCSHA512, "SHA-512 is a cryptographic hash algorithm that produces a 512-bit message digest." +
+        "\r\nIt offers the highest security level among the SHA-2 algorithms supported by t" +
+        "his application.");
             this.radioButton_SCSHA512.UseVisualStyleBackColor = true;
             // 
             // radioButton_SCSHA384
@@ -232,6 +241,9 @@
             this.radioButton_SCSHA384.TabIndex = 9;
             this.radioButton_SCSHA384.TabStop = true;
             this.radioButton_SCSHA384.Text = "SHA384";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCSHA384, "SHA-384 is a member of the SHA-2 family that produces a 384-bit message digest.\r\n" +
+        "It provides a higher security level than SHA-256 and is commonly used with large" +
+        "r elliptic curve cryptography keys.");
             this.radioButton_SCSHA384.UseVisualStyleBackColor = true;
             // 
             // radioButton_SCSHA256
@@ -280,6 +292,9 @@
             this.radioButton_SCEnveloped.TabIndex = 10;
             this.radioButton_SCEnveloped.TabStop = true;
             this.radioButton_SCEnveloped.Text = "Enveloped";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCEnveloped, "The original document is embedded inside the signed document together with the di" +
+        "gital signature.\r\nThis format is commonly used for XML-based signature structure" +
+        "s.");
             this.radioButton_SCEnveloped.UseVisualStyleBackColor = true;
             // 
             // radioButton_SCAttached
@@ -291,6 +306,9 @@
             this.radioButton_SCAttached.TabIndex = 9;
             this.radioButton_SCAttached.TabStop = true;
             this.radioButton_SCAttached.Text = "Attached";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCAttached, "The digital signature is stored together with the original document in a single s" +
+        "igned file.\r\nThe signed file contains both the original content and the digital " +
+        "signature.");
             this.radioButton_SCAttached.UseVisualStyleBackColor = true;
             // 
             // radioButton_SCDetached
@@ -303,6 +321,9 @@
             this.radioButton_SCDetached.TabIndex = 8;
             this.radioButton_SCDetached.TabStop = true;
             this.radioButton_SCDetached.Text = "Detached";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCDetached, "The digital signature is stored in a separate signature file while the original d" +
+        "ocument remains unchanged.\r\nBoth the original file and the signature file are re" +
+        "quired during signature verification.");
             this.radioButton_SCDetached.UseVisualStyleBackColor = true;
             // 
             // label6
@@ -339,6 +360,8 @@
             this.radioButton_SCXAdES.TabIndex = 10;
             this.radioButton_SCXAdES.TabStop = true;
             this.radioButton_SCXAdES.Text = "XAdES";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCXAdES, "XAdES (XML Advanced Electronic Signatures)\r\n\r\nCreates an XML-based digital signat" +
+        "ure.\r\nRecommended for XML documents and e-Government integrations.\r\n");
             this.radioButton_SCXAdES.UseVisualStyleBackColor = true;
             // 
             // radioButton_SCPAdES
@@ -350,6 +373,8 @@
             this.radioButton_SCPAdES.TabIndex = 9;
             this.radioButton_SCPAdES.TabStop = true;
             this.radioButton_SCPAdES.Text = "PAdES";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCPAdES, "PAdES (PDF Advanced Electronic Signatures)\r\n\r\nCreates a digital signature embedde" +
+        "d directly into PDF documents.\r\nUse this format when signing PDF files.\r\n");
             this.radioButton_SCPAdES.UseVisualStyleBackColor = true;
             // 
             // radioButton_SCCAdES
@@ -362,6 +387,9 @@
             this.radioButton_SCCAdES.TabIndex = 8;
             this.radioButton_SCCAdES.TabStop = true;
             this.radioButton_SCCAdES.Text = "CAdES";
+            this.toolTip_SCControl.SetToolTip(this.radioButton_SCCAdES, "CAdES (CMS Advanced Electronic Signatures)\r\n\r\nCreates a CMS/PKCS#7 based digital " +
+        "signature for any type of file.\r\nRecommended for general-purpose electronic sign" +
+        "ature operations.");
             this.radioButton_SCCAdES.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -407,6 +435,7 @@
             this.textBox_SCFilePath.ReadOnly = true;
             this.textBox_SCFilePath.Size = new System.Drawing.Size(557, 27);
             this.textBox_SCFilePath.TabIndex = 5;
+            this.toolTip_SCControl.SetToolTip(this.textBox_SCFilePath, "File Path");
             // 
             // button_SCSelectFile
             // 
@@ -427,7 +456,7 @@
             this.button_SCSign.Name = "button_SCSign";
             this.button_SCSign.Size = new System.Drawing.Size(218, 46);
             this.button_SCSign.TabIndex = 18;
-            this.button_SCSign.Text = "Sign with Smart Card";
+            this.button_SCSign.Text = "Sign with SmartCard";
             this.button_SCSign.UseVisualStyleBackColor = true;
             this.button_SCSign.Click += new System.EventHandler(this.button_SCSign_Click);
             // 
@@ -446,6 +475,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SCControl";
             this.Size = new System.Drawing.Size(959, 550);
+            this.toolTip_SCControl.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Load += new System.EventHandler(this.SCControl_Load);
             this.groupBox_SCReader.ResumeLayout(false);
             this.groupBox_SCReader.PerformLayout();
@@ -497,5 +527,6 @@
         private System.Windows.Forms.TextBox textBox_SCFilePath;
         private System.Windows.Forms.Button button_SCSelectFile;
         private System.Windows.Forms.Button button_SCSign;
+        private System.Windows.Forms.ToolTip toolTip_SCControl;
     }
 }

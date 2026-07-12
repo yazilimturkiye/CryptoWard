@@ -124,4 +124,7 @@ The application provides a unified interface for certificate-based security tech
 If you do not have a valid MA3API license, please contact TÜBİTAK BİLGEM Kamu Sertifikasyon Merkezi (Kamu SM) or visit https://yazilim.kamusm.gov.tr for licensing information and support.
 </value>
   </data>
+  <metadata name="toolTip_AboutControl.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
